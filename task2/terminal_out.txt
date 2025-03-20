@@ -1,0 +1,369 @@
+(comp0197-cw1-pt) ziyangsun@eduroam-int-dhcp-97-141-228 task2 % python task.py                 
+Files already downloaded and verified
+In multicategory classification, the random guess benchmark is calculated in two ways: if the categories are balanced, the uniform guess accuracy is 1/K (10 per cent when K = 10); if the categories are not balanced, it is the sum of the proportions of the categories. In this problem, because the categories are balanced, so I use the uniform guess, and then want to use the accuracy to test, for CIFAR10random gauss expected accuracy should be 10%
+=== A) Random Guess Baseline ===
+[RandomGuess] Acc=0.0963, F1_macro=0.0963
+
+=== B) Basic ELM ===
+Epoch 1/20, Loss=2.6123
+Epoch 2/20, Loss=2.1616
+Epoch 3/20, Loss=2.0077
+Epoch 4/20, Loss=1.8867
+Epoch 5/20, Loss=1.8267
+[ELM+MixUp] Acc=0.3846, F1_macro=0.3656
+Epoch 6/20, Loss=1.7760
+Epoch 7/20, Loss=1.7278
+Epoch 8/20, Loss=1.7030
+Epoch 9/20, Loss=1.6154
+Epoch 10/20, Loss=1.6386
+[ELM+MixUp] Acc=0.4403, F1_macro=0.4335
+Epoch 11/20, Loss=1.5351
+Epoch 12/20, Loss=1.5342
+Epoch 13/20, Loss=1.4953
+Epoch 14/20, Loss=1.4777
+Epoch 15/20, Loss=1.4704
+[ELM+MixUp] Acc=0.4323, F1_macro=0.3858
+Epoch 16/20, Loss=1.4358
+Epoch 17/20, Loss=1.4243
+Epoch 18/20, Loss=1.4118
+Epoch 19/20, Loss=1.3826
+Epoch 20/20, Loss=1.3311
+[ELM+MixUp] Acc=0.4497, F1_macro=0.4419
+
+=== C) ELM + MyMixUp ===
+16 images in one row saved to: mixup.png
+Epoch 1/20, mixup Loss=1.9971
+Epoch 2/20, mixup Loss=1.9072
+Epoch 3/20, mixup Loss=1.8796
+Epoch 4/20, mixup Loss=1.8563
+Epoch 5/20, mixup Loss=1.8463
+[ELM] Acc=0.4513, F1_macro=0.4436
+Epoch 6/20, mixup Loss=1.8190
+Epoch 7/20, mixup Loss=1.8175
+Epoch 8/20, mixup Loss=1.8048
+Epoch 9/20, mixup Loss=1.7944
+Epoch 10/20, mixup Loss=1.7858
+[ELM] Acc=0.4649, F1_macro=0.4613
+Epoch 11/20, mixup Loss=1.7738
+Epoch 12/20, mixup Loss=1.7819
+Epoch 13/20, mixup Loss=1.7610
+Epoch 14/20, mixup Loss=1.7493
+Epoch 15/20, mixup Loss=1.7480
+[ELM] Acc=0.4724, F1_macro=0.4630
+Epoch 16/20, mixup Loss=1.7469
+Epoch 17/20, mixup Loss=1.7515
+Epoch 18/20, mixup Loss=1.7339
+Epoch 19/20, mixup Loss=1.7358
+Epoch 20/20, mixup Loss=1.7267
+[ELM] Acc=0.4807, F1_macro=0.4753
+
+=== D) MyEnsembleELM ===
+
+--- Epoch 1/20 ---
+Model 1/5, Loss=2.3406
+Model 2/5, Loss=2.5897
+Model 3/5, Loss=2.4861
+Model 4/5, Loss=2.2143
+Model 5/5, Loss=2.3754
+
+--- Epoch 2/20 ---
+Model 1/5, Loss=2.0411
+Model 2/5, Loss=2.1593
+Model 3/5, Loss=2.0375
+Model 4/5, Loss=1.7962
+Model 5/5, Loss=2.0460
+
+--- Epoch 3/20 ---
+Model 1/5, Loss=1.8752
+Model 2/5, Loss=2.0307
+Model 3/5, Loss=1.8356
+Model 4/5, Loss=1.6474
+Model 5/5, Loss=1.9120
+
+--- Epoch 4/20 ---
+Model 1/5, Loss=1.7693
+Model 2/5, Loss=1.8960
+Model 3/5, Loss=1.7445
+Model 4/5, Loss=1.5552
+Model 5/5, Loss=1.7964
+
+--- Epoch 5/20 ---
+Model 1/5, Loss=1.7045
+Model 2/5, Loss=1.8335
+Model 3/5, Loss=1.6262
+Model 4/5, Loss=1.4853
+Model 5/5, Loss=1.7334
+[EnsembleELM_vote] Acc=0.4947, F1_macro=0.4644
+[EnsembleELM_mean] Acc=0.4947, F1_macro=0.4644
+
+--- Epoch 6/20 ---
+Model 1/5, Loss=1.6359
+Model 2/5, Loss=1.7661
+Model 3/5, Loss=1.5729
+Model 4/5, Loss=1.4088
+Model 5/5, Loss=1.7076
+
+--- Epoch 7/20 ---
+Model 1/5, Loss=1.5849
+Model 2/5, Loss=1.7126
+Model 3/5, Loss=1.5304
+Model 4/5, Loss=1.3747
+Model 5/5, Loss=1.6598
+
+--- Epoch 8/20 ---
+Model 1/5, Loss=1.5449
+Model 2/5, Loss=1.6534
+Model 3/5, Loss=1.4742
+Model 4/5, Loss=1.3384
+Model 5/5, Loss=1.5828
+
+--- Epoch 9/20 ---
+Model 1/5, Loss=1.5019
+Model 2/5, Loss=1.5919
+Model 3/5, Loss=1.4634
+Model 4/5, Loss=1.2912
+Model 5/5, Loss=1.5725
+
+--- Epoch 10/20 ---
+Model 1/5, Loss=1.4720
+Model 2/5, Loss=1.6055
+Model 3/5, Loss=1.4163
+Model 4/5, Loss=1.2542
+Model 5/5, Loss=1.5258
+[EnsembleELM_vote] Acc=0.5033, F1_macro=0.4954
+[EnsembleELM_mean] Acc=0.5033, F1_macro=0.4954
+
+--- Epoch 11/20 ---
+Model 1/5, Loss=1.4503
+Model 2/5, Loss=1.5209
+Model 3/5, Loss=1.3874
+Model 4/5, Loss=1.2186
+Model 5/5, Loss=1.5321
+
+--- Epoch 12/20 ---
+Model 1/5, Loss=1.4068
+Model 2/5, Loss=1.5075
+Model 3/5, Loss=1.3412
+Model 4/5, Loss=1.1927
+Model 5/5, Loss=1.4746
+
+--- Epoch 13/20 ---
+Model 1/5, Loss=1.3760
+Model 2/5, Loss=1.4767
+Model 3/5, Loss=1.3046
+Model 4/5, Loss=1.1782
+Model 5/5, Loss=1.4475
+
+--- Epoch 14/20 ---
+Model 1/5, Loss=1.3723
+Model 2/5, Loss=1.4615
+Model 3/5, Loss=1.2903
+Model 4/5, Loss=1.1647
+Model 5/5, Loss=1.4060
+
+--- Epoch 15/20 ---
+Model 1/5, Loss=1.3514
+Model 2/5, Loss=1.4522
+Model 3/5, Loss=1.2719
+Model 4/5, Loss=1.1369
+Model 5/5, Loss=1.3995
+[EnsembleELM_vote] Acc=0.5259, F1_macro=0.5190
+[EnsembleELM_mean] Acc=0.5259, F1_macro=0.5190
+
+--- Epoch 16/20 ---
+Model 1/5, Loss=1.3119
+Model 2/5, Loss=1.4017
+Model 3/5, Loss=1.2462
+Model 4/5, Loss=1.1068
+Model 5/5, Loss=1.3805
+
+--- Epoch 17/20 ---
+Model 1/5, Loss=1.2855
+Model 2/5, Loss=1.4021
+Model 3/5, Loss=1.2233
+Model 4/5, Loss=1.0947
+Model 5/5, Loss=1.3596
+
+--- Epoch 18/20 ---
+Model 1/5, Loss=1.2863
+Model 2/5, Loss=1.3865
+Model 3/5, Loss=1.2099
+Model 4/5, Loss=1.0900
+Model 5/5, Loss=1.3350
+
+--- Epoch 19/20 ---
+Model 1/5, Loss=1.2548
+Model 2/5, Loss=1.3846
+Model 3/5, Loss=1.1684
+Model 4/5, Loss=1.0502
+Model 5/5, Loss=1.3318
+
+--- Epoch 20/20 ---
+Model 1/5, Loss=1.2489
+Model 2/5, Loss=1.3413
+Model 3/5, Loss=1.1475
+Model 4/5, Loss=1.0512
+Model 5/5, Loss=1.3014
+[EnsembleELM_vote] Acc=0.5318, F1_macro=0.5309
+[EnsembleELM_mean] Acc=0.5318, F1_macro=0.5309
+
+=== E) Ensemble + MixUp ===
+
+--- Epoch 1/20 ---
+Model 1/5, mixup Loss=2.8079
+Model 2/5, mixup Loss=3.0540
+Model 3/5, mixup Loss=3.0049
+Model 4/5, mixup Loss=2.7404
+Model 5/5, mixup Loss=2.9634
+
+--- Epoch 2/20 ---
+Model 1/5, mixup Loss=2.6734
+Model 2/5, mixup Loss=2.7704
+Model 3/5, mixup Loss=2.7407
+Model 4/5, mixup Loss=2.4282
+Model 5/5, mixup Loss=2.7173
+
+--- Epoch 3/20 ---
+Model 1/5, mixup Loss=2.5735
+Model 2/5, mixup Loss=2.7215
+Model 3/5, mixup Loss=2.5753
+Model 4/5, mixup Loss=2.3780
+Model 5/5, mixup Loss=2.5599
+
+--- Epoch 4/20 ---
+Model 1/5, mixup Loss=2.4804
+Model 2/5, mixup Loss=2.6180
+Model 3/5, mixup Loss=2.4929
+Model 4/5, mixup Loss=2.2723
+Model 5/5, mixup Loss=2.5225
+
+--- Epoch 5/20 ---
+Model 1/5, mixup Loss=2.4200
+Model 2/5, mixup Loss=2.5518
+Model 3/5, mixup Loss=2.4490
+Model 4/5, mixup Loss=2.2310
+Model 5/5, mixup Loss=2.4796
+[EnsembleELM_vote] Acc=0.4410, F1_macro=0.4216
+[EnsembleELM_mean] Acc=0.4410, F1_macro=0.4216
+
+--- Epoch 6/20 ---
+Model 1/5, mixup Loss=2.3846
+Model 2/5, mixup Loss=2.5592
+Model 3/5, mixup Loss=2.4193
+Model 4/5, mixup Loss=2.1858
+Model 5/5, mixup Loss=2.4598
+
+--- Epoch 7/20 ---
+Model 1/5, mixup Loss=2.4057
+Model 2/5, mixup Loss=2.4717
+Model 3/5, mixup Loss=2.3981
+Model 4/5, mixup Loss=2.1624
+Model 5/5, mixup Loss=2.4205
+
+--- Epoch 8/20 ---
+Model 1/5, mixup Loss=2.3703
+Model 2/5, mixup Loss=2.4549
+Model 3/5, mixup Loss=2.3234
+Model 4/5, mixup Loss=2.1253
+Model 5/5, mixup Loss=2.3684
+
+--- Epoch 9/20 ---
+Model 1/5, mixup Loss=2.3152
+Model 2/5, mixup Loss=2.4401
+Model 3/5, mixup Loss=2.3293
+Model 4/5, mixup Loss=2.0933
+Model 5/5, mixup Loss=2.4120
+
+--- Epoch 10/20 ---
+Model 1/5, mixup Loss=2.3288
+Model 2/5, mixup Loss=2.4435
+Model 3/5, mixup Loss=2.3338
+Model 4/5, mixup Loss=2.0728
+Model 5/5, mixup Loss=2.3648
+[EnsembleELM_vote] Acc=0.4973, F1_macro=0.4944
+[EnsembleELM_mean] Acc=0.4973, F1_macro=0.4944
+
+--- Epoch 11/20 ---
+Model 1/5, mixup Loss=2.2643
+Model 2/5, mixup Loss=2.3527
+Model 3/5, mixup Loss=2.2745
+Model 4/5, mixup Loss=2.0467
+Model 5/5, mixup Loss=2.2926
+
+--- Epoch 12/20 ---
+Model 1/5, mixup Loss=2.2359
+Model 2/5, mixup Loss=2.3860
+Model 3/5, mixup Loss=2.2579
+Model 4/5, mixup Loss=2.0751
+Model 5/5, mixup Loss=2.3171
+
+--- Epoch 13/20 ---
+Model 1/5, mixup Loss=2.2407
+Model 2/5, mixup Loss=2.3879
+Model 3/5, mixup Loss=2.2216
+Model 4/5, mixup Loss=2.0560
+Model 5/5, mixup Loss=2.2731
+
+--- Epoch 14/20 ---
+Model 1/5, mixup Loss=2.2390
+Model 2/5, mixup Loss=2.3340
+Model 3/5, mixup Loss=2.1901
+Model 4/5, mixup Loss=2.0180
+Model 5/5, mixup Loss=2.2750
+
+--- Epoch 15/20 ---
+Model 1/5, mixup Loss=2.1885
+Model 2/5, mixup Loss=2.3051
+Model 3/5, mixup Loss=2.1905
+Model 4/5, mixup Loss=2.0311
+Model 5/5, mixup Loss=2.2762
+[EnsembleELM_vote] Acc=0.4977, F1_macro=0.4966
+[EnsembleELM_mean] Acc=0.4977, F1_macro=0.4966
+
+--- Epoch 16/20 ---
+Model 1/5, mixup Loss=2.2221
+Model 2/5, mixup Loss=2.2761
+Model 3/5, mixup Loss=2.1841
+Model 4/5, mixup Loss=1.9829
+Model 5/5, mixup Loss=2.2515
+
+--- Epoch 17/20 ---
+Model 1/5, mixup Loss=2.1775
+Model 2/5, mixup Loss=2.3195
+Model 3/5, mixup Loss=2.1958
+Model 4/5, mixup Loss=1.9814
+Model 5/5, mixup Loss=2.2638
+
+--- Epoch 18/20 ---
+Model 1/5, mixup Loss=2.1601
+Model 2/5, mixup Loss=2.1932
+Model 3/5, mixup Loss=2.1323
+Model 4/5, mixup Loss=1.9901
+Model 5/5, mixup Loss=2.2506
+
+--- Epoch 19/20 ---
+Model 1/5, mixup Loss=2.1594
+Model 2/5, mixup Loss=2.2826
+Model 3/5, mixup Loss=2.1342
+Model 4/5, mixup Loss=1.9395
+Model 5/5, mixup Loss=2.2070
+
+--- Epoch 20/20 ---
+Model 1/5, mixup Loss=2.1429
+Model 2/5, mixup Loss=2.2672
+Model 3/5, mixup Loss=2.1309
+Model 4/5, mixup Loss=1.9404
+Model 5/5, mixup Loss=2.2397
+[EnsembleELM_vote] Acc=0.4721, F1_macro=0.4515
+[EnsembleELM_mean] Acc=0.4721, F1_macro=0.4515
+Montage saved to: result.png
+
+=== Summary ===
+RandomGuess            => Acc=0.096, F1=0.096
+Basic ELM              => Acc=0.450, F1=0.442
+ELM + MixUp            => Acc=0.481, F1=0.475
+Ensemble ELM vote      => Acc=0.532, F1=0.531
+Ensemble ELM mean      => Acc=0.532, F1=0.531
+Ensemble + MixUp vote  => Acc=0.472, F1=0.452
+Ensemble + MixUp mean  => Acc=0.472, F1=0.452
+Best model             => MyEnsembleELM

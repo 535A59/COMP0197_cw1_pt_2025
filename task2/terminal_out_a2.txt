@@ -1,0 +1,198 @@
+(comp0197-cw1-pt) ziyangsun@eduroam-int-dhcp-97-141-228 task2 % python task2a.py
+Files already downloaded and verified
+
+--- Epoch 1/20 ---
+Model 1/5, Loss=2.3406
+Model 2/5, Loss=2.5897
+Model 3/5, Loss=2.4861
+Model 4/5, Loss=2.2143
+Model 5/5, Loss=2.3754
+
+--- Epoch 2/20 ---
+Model 1/5, Loss=2.0411
+Model 2/5, Loss=2.1593
+Model 3/5, Loss=2.0375
+Model 4/5, Loss=1.7962
+Model 5/5, Loss=2.0460
+
+--- Epoch 3/20 ---
+Model 1/5, Loss=1.8752
+Model 2/5, Loss=2.0307
+Model 3/5, Loss=1.8356
+Model 4/5, Loss=1.6474
+Model 5/5, Loss=1.9120
+
+--- Epoch 4/20 ---
+Model 1/5, Loss=1.7693
+Model 2/5, Loss=1.8960
+Model 3/5, Loss=1.7445
+Model 4/5, Loss=1.5552
+Model 5/5, Loss=1.7964
+
+--- Epoch 5/20 ---
+Model 1/5, Loss=1.7045
+Model 2/5, Loss=1.8335
+Model 3/5, Loss=1.6262
+Model 4/5, Loss=1.4853
+Model 5/5, Loss=1.7334
+[EnsembleELM_vote] Acc=0.4947, F1_macro=0.4644
+[EnsembleELM_mean] Acc=0.4947, F1_macro=0.4644
+
+--- Epoch 6/20 ---
+Model 1/5, Loss=1.6359
+Model 2/5, Loss=1.7661
+Model 3/5, Loss=1.5729
+Model 4/5, Loss=1.4088
+Model 5/5, Loss=1.7076
+
+--- Epoch 7/20 ---
+Model 1/5, Loss=1.5849
+Model 2/5, Loss=1.7126
+Model 3/5, Loss=1.5304
+Model 4/5, Loss=1.3747
+Model 5/5, Loss=1.6598
+
+--- Epoch 8/20 ---
+Model 1/5, Loss=1.5449
+Model 2/5, Loss=1.6534
+Model 3/5, Loss=1.4742
+Model 4/5, Loss=1.3384
+Model 5/5, Loss=1.5828
+
+--- Epoch 9/20 ---
+Model 1/5, Loss=1.5019
+Model 2/5, Loss=1.5919
+Model 3/5, Loss=1.4634
+Model 4/5, Loss=1.2912
+Model 5/5, Loss=1.5725
+
+--- Epoch 10/20 ---
+Model 1/5, Loss=1.4720
+Model 2/5, Loss=1.6055
+Model 3/5, Loss=1.4163
+Model 4/5, Loss=1.2542
+Model 5/5, Loss=1.5258
+[EnsembleELM_vote] Acc=0.5033, F1_macro=0.4954
+[EnsembleELM_mean] Acc=0.5033, F1_macro=0.4954
+
+--- Epoch 11/20 ---
+Model 1/5, Loss=1.4503
+Model 2/5, Loss=1.5209
+Model 3/5, Loss=1.3874
+Model 4/5, Loss=1.2186
+Model 5/5, Loss=1.5321
+
+--- Epoch 12/20 ---
+Model 1/5, Loss=1.4068
+Model 2/5, Loss=1.5075
+Model 3/5, Loss=1.3412
+Model 4/5, Loss=1.1927
+Model 5/5, Loss=1.4746
+
+--- Epoch 13/20 ---
+Model 1/5, Loss=1.3760
+Model 2/5, Loss=1.4767
+Model 3/5, Loss=1.3046
+Model 4/5, Loss=1.1782
+Model 5/5, Loss=1.4475
+
+--- Epoch 14/20 ---
+Model 1/5, Loss=1.3723
+Model 2/5, Loss=1.4615
+Model 3/5, Loss=1.2903
+Model 4/5, Loss=1.1647
+Model 5/5, Loss=1.4060
+
+--- Epoch 15/20 ---
+Model 1/5, Loss=1.3514
+Model 2/5, Loss=1.4522
+Model 3/5, Loss=1.2719
+Model 4/5, Loss=1.1369
+Model 5/5, Loss=1.3995
+[EnsembleELM_vote] Acc=0.5259, F1_macro=0.5190
+[EnsembleELM_mean] Acc=0.5259, F1_macro=0.5190
+
+--- Epoch 16/20 ---
+Model 1/5, Loss=1.3119
+Model 2/5, Loss=1.4017
+Model 3/5, Loss=1.2462
+Model 4/5, Loss=1.1068
+Model 5/5, Loss=1.3805
+
+--- Epoch 17/20 ---
+Model 1/5, Loss=1.2855
+Model 2/5, Loss=1.4021
+Model 3/5, Loss=1.2233
+Model 4/5, Loss=1.0947
+Model 5/5, Loss=1.3596
+
+--- Epoch 18/20 ---
+Model 1/5, Loss=1.2863
+Model 2/5, Loss=1.3865
+Model 3/5, Loss=1.2099
+Model 4/5, Loss=1.0900
+Model 5/5, Loss=1.3350
+
+--- Epoch 19/20 ---
+Model 1/5, Loss=1.2548
+Model 2/5, Loss=1.3846
+Model 3/5, Loss=1.1684
+Model 4/5, Loss=1.0502
+Model 5/5, Loss=1.3318
+
+--- Epoch 20/20 ---
+Model 1/5, Loss=1.2489
+Model 2/5, Loss=1.3413
+Model 3/5, Loss=1.1475
+Model 4/5, Loss=1.0512
+Model 5/5, Loss=1.3014
+[EnsembleELM_vote] Acc=0.5318, F1_macro=0.5309
+[EnsembleELM_mean] Acc=0.5318, F1_macro=0.5309
+Ensemble ELM: Acc=0.5318, F1_macro=0.5309
+Time taken for Ensemble ELM: 497.87s
+
+
+ELM (LS): Acc=0.3488, F1_macro=0.3474
+Time taken for ELM (LS): 13.43s
+Trial 1: hidden_conv_channels=16, kernel_size=5, std=0.2, reg_lambda=0.8245 => Acc: 0.37, F1_macro: 0.3662
+Time taken: 11.91s
+Trial 2: hidden_conv_channels=8, kernel_size=5, std=0.1, reg_lambda=0.5484 => Acc: 0.38, F1_macro: 0.3737
+Time taken: 5.64s
+Trial 3: hidden_conv_channels=32, kernel_size=3, std=0.05, reg_lambda=0.4595 => Acc: 0.21, F1_macro: 0.2050
+Time taken: 82.50s
+Trial 4: hidden_conv_channels=32, kernel_size=5, std=0.2, reg_lambda=0.4385 => Acc: 0.29, F1_macro: 0.2936
+Time taken: 57.48s
+Trial 5: hidden_conv_channels=16, kernel_size=5, std=0.2, reg_lambda=0.9604 => Acc: 0.37, F1_macro: 0.3705
+Time taken: 12.51s
+Trial 6: hidden_conv_channels=32, kernel_size=3, std=0.2, reg_lambda=0.1695 => Acc: 0.15, F1_macro: 0.1398
+Time taken: 96.30s
+Trial 7: hidden_conv_channels=8, kernel_size=3, std=0.05, reg_lambda=0.6788 => Acc: 0.38, F1_macro: 0.3704
+Time taken: 7.61s
+Trial 8: hidden_conv_channels=16, kernel_size=3, std=0.05, reg_lambda=0.7041 => Acc: 0.37, F1_macro: 0.3710
+Time taken: 17.68s
+Trial 9: hidden_conv_channels=8, kernel_size=3, std=0.05, reg_lambda=0.3287 => Acc: 0.39, F1_macro: 0.3810
+Time taken: 7.62s
+Trial 10: hidden_conv_channels=32, kernel_size=3, std=0.2, reg_lambda=0.3938 => Acc: 0.25, F1_macro: 0.2507
+Time taken: 94.04s
+Trial 11: hidden_conv_channels=32, kernel_size=5, std=0.2, reg_lambda=0.1634 => Acc: 0.30, F1_macro: 0.2981
+Time taken: 67.86s
+Trial 12: hidden_conv_channels=8, kernel_size=5, std=0.1, reg_lambda=0.3050 => Acc: 0.37, F1_macro: 0.3648
+Time taken: 7.33s
+Trial 13: hidden_conv_channels=16, kernel_size=3, std=0.1, reg_lambda=0.4776 => Acc: 0.36, F1_macro: 0.3577
+Time taken: 18.18s
+Trial 14: hidden_conv_channels=8, kernel_size=5, std=0.05, reg_lambda=0.1586 => Acc: 0.37, F1_macro: 0.3612
+Time taken: 7.26s
+Trial 15: hidden_conv_channels=32, kernel_size=3, std=0.1, reg_lambda=0.8407 => Acc: 0.12, F1_macro: 0.0802
+Time taken: 97.63s
+Trial 16: hidden_conv_channels=32, kernel_size=3, std=0.1, reg_lambda=0.1479 => Acc: 0.25, F1_macro: 0.2518
+Time taken: 96.44s
+Trial 17: hidden_conv_channels=16, kernel_size=5, std=0.1, reg_lambda=0.9221 => Acc: 0.37, F1_macro: 0.3717
+Time taken: 14.36s
+Trial 18: hidden_conv_channels=8, kernel_size=3, std=0.05, reg_lambda=0.8695 => Acc: 0.38, F1_macro: 0.3786
+Time taken: 7.66s
+Trial 19: hidden_conv_channels=32, kernel_size=3, std=0.2, reg_lambda=0.9051 => Acc: 0.27, F1_macro: 0.2747
+Time taken: 99.56s
+Trial 20: hidden_conv_channels=8, kernel_size=3, std=0.2, reg_lambda=0.1376 => Acc: 0.37, F1_macro: 0.3695
+Time taken: 7.63s
+Best model performance: Acc: 0.39 F1=0.3695 with params: {'hidden_conv_channels': 8, 'kernel_size': 3, 'std': 0.05, 'reg_lambda': 0.3287265585032959}
+Montage saved to: new_result.png
